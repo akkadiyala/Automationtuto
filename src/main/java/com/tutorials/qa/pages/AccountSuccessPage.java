@@ -10,7 +10,7 @@ public class AccountSuccessPage {
 	
 	@FindBy(xpath =" //h1[text()='Your Account Has Been Created!']")
 
-	private WebElement accountsucesspage;
+	private WebElement Accountsucesspage;
 	
 	public AccountSuccessPage(WebDriver driver) {
 		this.driver=driver;
@@ -19,7 +19,7 @@ public class AccountSuccessPage {
 		
 	}
 	public String accountsucessmessage() {
-		String accountsuccessstatusactual=	accountsucesspage.getText();
+		String accountsuccessstatusactual=	Accountsucesspage.getText();
 		return accountsuccessstatusactual;
 			
 		}
