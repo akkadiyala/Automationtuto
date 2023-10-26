@@ -14,7 +14,7 @@ import com.tutorials.qa.pages.HomePage;
 import com.tutorials.qa.pages.SearchPage;
 
 public class Search extends Base {
-	
+	HomePage	homepage;
 	SearchPage searchpage;
 	public Search() throws IOException {
 		super();	
@@ -24,13 +24,14 @@ public class Search extends Base {
 	public void setup() throws IOException {
 		
 	    driver=	initlizedbroswer();
+	    homepage= new HomePage(driver);
 
 		
 		
 	}
 	@Test
 	public void verifywithvalidproduct() {
-		HomePage	homepage= new HomePage(driver);
+		
 		 homepage.searchbox("HP");
 		searchpage = homepage.clicksearchbox();
 		 
@@ -39,7 +40,7 @@ public class Search extends Base {
 	}
 	@Test
 public void verifywithinvalidproduct() {
-		HomePage	homepage= new HomePage(driver);	
+	
 		homepage.searchbox("honda");
 		searchpage = homepage.clicksearchbox();
 		
@@ -51,7 +52,7 @@ public void verifywithinvalidproduct() {
 	@Test
 public void verifywithoutnameproduct() {
 	
-		HomePage	homepage= new HomePage(driver);
+		
 	searchpage=	homepage.clicksearchbox();
 		
 			
