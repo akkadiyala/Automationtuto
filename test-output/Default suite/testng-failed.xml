@@ -3,13 +3,15 @@
 <suite name="Failed suite [Default suite]" guice-stage="DEVELOPMENT">
   <test thread-count="5" name="Default test(failed)">
     <classes>
-      <class name="com.tutorials.qa.testcases.Register">
+      <class name="com.tutorials.qa.testcases.Search">
         <methods>
-          <include name="teardown"/>
+          <include name="verifywithoutnameproduct"/>
           <include name="setup"/>
-          <include name="verifywithonlymantodoryfileds"/>
+          <include name="verifywithvalidproduct"/>
+          <include name="verifywithinvalidproduct"/>
+          <include name="teardown"/>
         </methods>
-      </class> <!-- com.tutorials.qa.testcases.Register -->
+      </class> <!-- com.tutorials.qa.testcases.Search -->
     </classes>
   </test> <!-- Default test(failed) -->
 </suite> <!-- Failed suite [Default suite] -->

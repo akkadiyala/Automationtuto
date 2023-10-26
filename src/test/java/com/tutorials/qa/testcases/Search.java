@@ -10,8 +10,12 @@ import org.testng.annotations.BeforeMethod;
 import org.testng.annotations.Test;
 
 import com.tutorials.qa.base.Base;
+import com.tutorials.qa.pages.HomePage;
+import com.tutorials.qa.pages.SearchPage;
 
 public class Search extends Base {
+	
+	SearchPage searchpage;
 	public Search() throws IOException {
 		super();	
 		}
@@ -26,28 +30,34 @@ public class Search extends Base {
 	}
 	@Test
 	public void verifywithvalidproduct() {
-		
-		driver.findElement(By.name("search")).sendKeys("hp");
-		driver.findElement(By.xpath("//button[@class='btn btn-default btn-lg']")).click();
-		Assert.assertTrue(driver.findElement(By.linkText("HP LP3065")).isDisplayed());
+		HomePage	homepage= new HomePage(driver);
+		 homepage.searchbox("HP");
+		searchpage = homepage.clicksearchbox();
+		 
+		Assert.assertTrue(searchpage.DISPLAYSTATUSOFHP());
 		
 	}
 	@Test
 public void verifywithinvalidproduct() {
+		HomePage	homepage= new HomePage(driver);	
+		homepage.searchbox("honda");
+		searchpage = homepage.clicksearchbox();
 		
-		driver.findElement(By.name("search")).sendKeys("honda");
-		driver.findElement(By.xpath("//button[@class='btn btn-default btn-lg']")).click();
-		String actual = driver.findElement(By.xpath("//div[@id='content']/p[text()='There is no product that matches the search criteria.']")).getText();
+		
+		String actual =  searchpage.invaliderrormessageforproduct();
 		Assert.assertEquals(actual, "There is no product that matches the search criteria.");
 		
 	}
 	@Test
 public void verifywithoutnameproduct() {
+	
+		HomePage	homepage= new HomePage(driver);
+	searchpage=	homepage.clicksearchbox();
 		
-		driver.findElement(By.name("search")).sendKeys("");
-		driver.findElement(By.xpath("//button[@class='btn btn-default btn-lg']")).click();
-		String actual = driver.findElement(By.xpath("//div[@id='content']/p[text()='There is no product that matches the search criteria.']")).getText();
-		Assert.assertEquals(actual, "There is no product that matches the search criteria.");
+			
+			String actual =  searchpage.invaliderrormessageforproduct();
+			Assert.assertEquals(actual, "There is no product that matches the search criteria.");
+			
 		
 	}
 	@AfterMethod

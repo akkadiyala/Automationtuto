@@ -74,9 +74,10 @@ public void clickoncheckboxagreefield() {
 	
 	checkboxagreefield.click();
 	}
-public void clickonclickcontinuefield() {
+public AccountSuccessPage clickonclickcontinuefield() {
 	
 	clickcontinuefield.click();
+	return new AccountSuccessPage(driver);
 	}
 public void clickonsubscriberadiobutton() {
 	
