@@ -26,7 +26,7 @@ public Login() throws IOException {
 	
 	super();	
 	}
-	WebDriver driver;
+	public WebDriver driver;
 
 	@BeforeMethod
 	

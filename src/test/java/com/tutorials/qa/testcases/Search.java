@@ -19,7 +19,7 @@ public class Search extends Base {
 	public Search() throws IOException {
 		super();	
 		}
-	WebDriver driver;
+	public WebDriver driver;
 	@BeforeMethod
 	public void setup() throws IOException {
 		
