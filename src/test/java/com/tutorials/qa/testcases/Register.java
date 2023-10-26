@@ -24,7 +24,7 @@ public class Register extends Base {
 	public Register() throws IOException {
 		super();	
 		}
-	WebDriver driver;
+	public WebDriver driver;
 	@BeforeMethod
 	public void setup() throws IOException {
 		
