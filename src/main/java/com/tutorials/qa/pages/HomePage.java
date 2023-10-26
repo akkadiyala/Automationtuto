@@ -16,6 +16,13 @@ public class HomePage {
 	@FindBy(linkText="Register")
 	private WebElement Register;
 	
+	@FindBy(name="search")
+	private WebElement search;
+	
+	@FindBy(xpath="//button[@class='btn btn-default btn-lg']")
+	private WebElement searchbutton;
+	
+	
 	
 	public HomePage(WebDriver driver) {
 		this.driver= driver;
@@ -25,10 +32,20 @@ public class HomePage {
 	public void clickonmyaccount() {
 		myaccountdropmenu.click();
 	}
-	public void selectloginoption() {
+	public LoginPage selectloginoption() {
 		login.click();
+		return new LoginPage(driver);
 	}
-	public void selectregisteroption() {
+	public RegisterPage selectregisteroption() {
 		Register.click();
+		return new RegisterPage(driver);
 	}
+	public void searchbox(String item) {
+		search.sendKeys(item);
+	}
+	public SearchPage clicksearchbox() {
+		searchbutton.click();
+		return new SearchPage(driver);
+	}
+	
 }

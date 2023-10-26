@@ -19,6 +19,8 @@ import com.tutorials.qa.pages.RegisterPage;
 import com.tutorials.qa.utilies.Utlities;
 
 public class Register extends Base {
+	 RegisterPage registerpage;
+	 AccountSuccessPage Accountsuccesspage;
 	public Register() throws IOException {
 		super();	
 		}
@@ -29,13 +31,13 @@ public class Register extends Base {
 	    driver=	initlizedbroswer();
 	    HomePage  homepage = new HomePage(driver);
 	    homepage.clickonmyaccount();
-	    homepage.selectregisteroption();
+	   registerpage = homepage.selectregisteroption();
 		
 			
 	}
 	@Test
 	public void verifywithonlymantodoryfileds() {
-		RegisterPage registerpage = new RegisterPage(driver);
+		
 		registerpage.enterfistname("chinna");
 		registerpage.enterlastname("kadiyala");
 		registerpage.enteremailfield(Utlities.emailtimestamp());
@@ -43,9 +45,9 @@ public class Register extends Base {
 		registerpage.enterinputpasswordfield("8790936903");
 		registerpage.enterinputconfirmfield("8790936903");
 		registerpage.clickoncheckboxagreefield();
-		registerpage.clickonclickcontinuefield();
-		AccountSuccessPage AccountSuccesspage = new AccountSuccessPage(driver);
-		String actualtext=AccountSuccesspage.accountsucessmessage();
+		 Accountsuccesspage = registerpage.clickonclickcontinuefield();
+		
+		String actualtext=Accountsuccesspage.accountsucessmessage();
 		System.out.println(actualtext);
 		Assert.assertEquals(actualtext , "Your Account Has Been Created!");
 		
@@ -54,7 +56,7 @@ public class Register extends Base {
 	@Test
 	public void verifyprovingallfeilds() {
 	
-		RegisterPage registerpage = new RegisterPage(driver);
+		
 		registerpage.enterfistname("chinna");
 		registerpage.enterlastname("kadiyala");
 		registerpage.enteremailfield(Utlities.emailtimestamp());
@@ -64,10 +66,10 @@ public class Register extends Base {
 		
 		registerpage.clickonsubscriberadiobutton();
 		registerpage.clickoncheckboxagreefield();
-		registerpage.clickonclickcontinuefield();
+		Accountsuccesspage = registerpage.clickonclickcontinuefield();
 		
-		AccountSuccessPage AccountSuccesspage = new AccountSuccessPage(driver);
-		String actualtext=AccountSuccesspage.accountsucessmessage();
+		
+		String actualtext=Accountsuccesspage.accountsucessmessage();
 		
 		Assert.assertEquals(actualtext , "Your Account Has Been Created!");
 		
@@ -75,7 +77,7 @@ public class Register extends Base {
 	}
 	@Test
 	public void verifyregisterwithexistingemail() {
-		RegisterPage registerpage = new RegisterPage(driver);
+		
 		registerpage.enterfistname("chinna");
 		registerpage.enterlastname("kadiyala");
 		registerpage.enteremailfield("anilkumar.marolix@gmail.com");
