@@ -21,7 +21,9 @@ import com.tutorials.qa.utilies.Utlities;
 
 
 public class Login extends Base {
+	LoginPage loginpage;
 public Login() throws IOException {
+	
 	super();	
 	}
 	WebDriver driver;
@@ -34,16 +36,17 @@ public Login() throws IOException {
 	    driver=	initlizedbroswer();
 	    HomePage  homepage = new HomePage(driver);
 	    homepage.clickonmyaccount();
-	    homepage.selectloginoption();		
+	    
+ loginpage = homepage.selectloginoption();	
 		
 	}
 	@Test(dataProvider= "validtestdata")
 	public void verfiyloginwithvaliddata(String email,String Password) {
-		LoginPage loginpage = new LoginPage(driver);
+		
 		loginpage.enteremail(email);
 		loginpage.enterpassword(Password);
-		loginpage.clickonlogin();
-		AccountPage accountpage = new AccountPage(driver);
+		AccountPage accountpage =loginpage.clickonlogin();
+		
 	
 		Assert.assertTrue(accountpage.accounteditinfromessage(),"Edit your account information");
 		
@@ -57,7 +60,7 @@ public Login() throws IOException {
 		}
 	@Test
 	public void verifyloginwithinvaliddata(){
-		LoginPage loginpage = new LoginPage(driver);
+		
 		loginpage.enteremail((Utlities.emailtimestamp()));
 		loginpage.enterpassword("invalidpassword");
 		loginpage.clickonlogin();
@@ -71,7 +74,7 @@ public Login() throws IOException {
 	@Test
 	public void Verifywithvalidemailandinvalidpassword() {
 	
-		LoginPage loginpage = new LoginPage(driver);
+		
 		loginpage.enteremail("anilkumar.marolix@gmail.com");
 		loginpage.enterpassword("invalidpassword");
 		loginpage.clickonlogin();

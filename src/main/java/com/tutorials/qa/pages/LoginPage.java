@@ -29,8 +29,9 @@ public void enteremail(String email) {
 public void enterpassword(String password) {
 	passwordenterbox.sendKeys(password);
 }
-public void clickonlogin() {
+public AccountPage clickonlogin() {
 	loginbutton.click();
+	return new AccountPage(driver);
 }
 public String warningmessageforemail() {
 String actualerrorforwrongemail=	emailnotcorrectwaringmessage.getText();
