@@ -26,10 +26,10 @@ urllink=	 pro.getProperty("url");
 	public WebDriver initlizedbroswer() {
 		 driver = new  ChromeDriver();
 		driver.manage().window().maximize();
-		driver.manage().timeouts().implicitlyWait(Duration.ofSeconds(10));
-		driver.manage().timeouts().pageLoadTimeout(Duration.ofSeconds(5));
+		
 		driver.get(urllink);
 		return driver;
 	}
 
 }
+//path correct way : 	String pathofoutput="test-output//ExtentReport//extentreport.html";

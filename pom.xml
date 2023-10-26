@@ -24,7 +24,7 @@
     <groupId>org.testng</groupId>
     <artifactId>testng</artifactId>
     <version>7.6.1</version>
-    <scope>test</scope>
+    <scope>complie</scope>
 	</dependency>
 <!-- https://mvnrepository.com/artifact/org.seleniumhq.selenium/selenium-java -->
 	<dependency>
@@ -50,9 +50,20 @@
     <artifactId>poi-ooxml-schemas</artifactId>
     <version>4.1.2</version>
 </dependency>
+<!-- https://mvnrepository.com/artifact/com.aventstack/extentreports -->
+<dependency>
+    <groupId>com.aventstack</groupId>
+    <artifactId>extentreports</artifactId>
+    <version>5.1.1</version>
+</dependency>
 
 
 
+  	<dependency>
+  		<groupId>com.praveen</groupId>
+  		<artifactId>ActiTIME</artifactId>
+  		<version>0.0.1-SNAPSHOT</version>
+  	</dependency>
   </dependencies>
 
   <build>
