@@ -6,9 +6,9 @@
 	</listeners>
   <test name="testing basicfunctional">
     <classes>
-      <class name="com.tutorials.qa.testcases.Search"/>
-       <class name="com.tutorials.qa.testcases.Login"/>
-        <class name="com.tutorials.qa.testcases.Register"/>
+      <class name="com.tutorials.qa.testcases.SearchTest"/>
+       <class name="com.tutorials.qa.testcases.LoginTest"/>
+        <class name="com.tutorials.qa.testcases.RegisterTest"/>
       
     
       

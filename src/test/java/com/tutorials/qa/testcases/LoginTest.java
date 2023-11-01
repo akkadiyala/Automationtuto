@@ -8,8 +8,12 @@ import org.openqa.selenium.By;
 import org.openqa.selenium.WebDriver;
 import org.openqa.selenium.chrome.ChromeDriver;
 import org.testng.Assert;
+import org.testng.annotations.AfterClass;
 import org.testng.annotations.AfterMethod;
+import org.testng.annotations.AfterTest;
+import org.testng.annotations.BeforeClass;
 import org.testng.annotations.BeforeMethod;
+import org.testng.annotations.BeforeTest;
 import org.testng.annotations.DataProvider;
 import org.testng.annotations.Test;
 
@@ -20,9 +24,9 @@ import com.tutorials.qa.pages.LoginPage;
 import com.tutorials.qa.utilies.Utlities;
 
 
-public class Login extends Base {
+public class LoginTest extends Base {
 	LoginPage loginpage;
-public Login() throws IOException {
+public LoginTest() throws IOException {
 	
 	super();	
 	}
@@ -40,7 +44,7 @@ public Login() throws IOException {
  loginpage = homepage.selectloginoption();	
 		
 	}
-	@Test(dataProvider= "validtestdata")
+	@Test(dataProvider= "validtestdata" , priority =1)
 	public void verfiyloginwithvaliddata(String email,String Password) {
 		
 		loginpage.enteremail(email);
@@ -55,10 +59,10 @@ public Login() throws IOException {
 	@DataProvider(name="validtestdata")
 	public Object[][] supplytestdata() throws IOException {
 		//Object [] []  data =Utlities.gettestdatafromexcel("Login");
-		Object [] []  data = {{"anilkumar.marolix@gmail.com" ,"Anilkumar"}};
+		Object [] []  data = {{"anilkumar5w.marolix@gmail.com" ,"Anilkumar"}};
 		return data;
 		}
-	@Test
+	@Test(priority=2)
 	public void verifyloginwithinvaliddata(){
 	
 		loginpage.enteremail((Utlities.emailtimestamp()));
@@ -71,11 +75,11 @@ public Login() throws IOException {
 	}
 	
 	
-	@Test
+	@Test(priority=3)
 	public void Verifywithvalidemailandinvalidpassword() {
 	
 		
-		loginpage.enteremail("anilkumar.marolix@gmail.com");
+		loginpage.enteremail((Utlities.emailtimestamp()));
 		loginpage.enterpassword("invalidpassword");
 		loginpage.clickonlogin();
 	String actaulwrongmessage=	loginpage.warningmessageforemail();
