@@ -4,7 +4,7 @@ import org.openqa.selenium.WebDriver;
 import org.openqa.selenium.WebElement;
 import org.openqa.selenium.support.FindBy;
 import org.openqa.selenium.support.PageFactory;
-
+//just a message to check in jenkins with git repo after changes 
 public class HomePage {
 	WebDriver driver;
 	@FindBy(xpath= "//span[text()='My Account']")
