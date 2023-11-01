@@ -5,18 +5,22 @@ import java.io.IOException;
 import org.openqa.selenium.By;
 import org.openqa.selenium.WebDriver;
 import org.testng.Assert;
+import org.testng.annotations.AfterClass;
 import org.testng.annotations.AfterMethod;
+import org.testng.annotations.AfterTest;
+import org.testng.annotations.BeforeClass;
 import org.testng.annotations.BeforeMethod;
+import org.testng.annotations.BeforeTest;
 import org.testng.annotations.Test;
 
 import com.tutorials.qa.base.Base;
 import com.tutorials.qa.pages.HomePage;
 import com.tutorials.qa.pages.SearchPage;
 
-public class Search extends Base {
+public class SearchTest extends Base {
 	HomePage	homepage;
 	SearchPage searchpage;
-	public Search() throws IOException {
+	public SearchTest() throws IOException {
 		super();	
 		}
 	public WebDriver driver;
