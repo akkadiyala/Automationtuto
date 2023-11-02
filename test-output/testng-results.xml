@@ -1,0 +1,149 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<testng-results ignored="0" total="10" passed="10" failed="0" skipped="0">
+  <reporter-output>
+  </reporter-output>
+  <suite started-at="2023-11-02T12:46:42 IST" name="ninjatutorials" finished-at="2023-11-02T12:47:54 IST" duration-ms="71569">
+    <groups>
+    </groups>
+    <test started-at="2023-11-02T12:46:42 IST" name="testing basicfunctional" finished-at="2023-11-02T12:47:54 IST" duration-ms="71569">
+      <class name="com.tutorials.qa.testcases.SearchTest">
+        <test-method is-config="true" signature="setup()[pri:0, instance:com.tutorials.qa.testcases.SearchTest@55141def]" started-at="2023-11-02T12:47:36 IST" name="setup" finished-at="2023-11-02T12:47:41 IST" duration-ms="5096" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- setup -->
+        <test-method signature="verifywithvalidproduct()[pri:1, instance:com.tutorials.qa.testcases.SearchTest@55141def]" started-at="2023-11-02T12:47:41 IST" name="verifywithvalidproduct" finished-at="2023-11-02T12:47:42 IST" duration-ms="750" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- verifywithvalidproduct -->
+        <test-method is-config="true" signature="teardown()[pri:0, instance:com.tutorials.qa.testcases.SearchTest@55141def]" started-at="2023-11-02T12:47:42 IST" name="teardown" finished-at="2023-11-02T12:47:42 IST" duration-ms="262" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- teardown -->
+        <test-method is-config="true" signature="setup()[pri:0, instance:com.tutorials.qa.testcases.SearchTest@55141def]" started-at="2023-11-02T12:47:42 IST" name="setup" finished-at="2023-11-02T12:47:47 IST" duration-ms="4818" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- setup -->
+        <test-method signature="verifywithinvalidproduct()[pri:2, instance:com.tutorials.qa.testcases.SearchTest@55141def]" started-at="2023-11-02T12:47:47 IST" name="verifywithinvalidproduct" finished-at="2023-11-02T12:47:48 IST" duration-ms="629" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- verifywithinvalidproduct -->
+        <test-method is-config="true" signature="teardown()[pri:0, instance:com.tutorials.qa.testcases.SearchTest@55141def]" started-at="2023-11-02T12:47:48 IST" name="teardown" finished-at="2023-11-02T12:47:48 IST" duration-ms="252" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- teardown -->
+        <test-method is-config="true" signature="setup()[pri:0, instance:com.tutorials.qa.testcases.SearchTest@55141def]" started-at="2023-11-02T12:47:48 IST" name="setup" finished-at="2023-11-02T12:47:53 IST" duration-ms="4816" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- setup -->
+        <test-method signature="verifywithoutnameproduct()[pri:3, instance:com.tutorials.qa.testcases.SearchTest@55141def]" started-at="2023-11-02T12:47:53 IST" name="verifywithoutnameproduct" finished-at="2023-11-02T12:47:53 IST" duration-ms="489" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- verifywithoutnameproduct -->
+        <test-method is-config="true" signature="teardown()[pri:0, instance:com.tutorials.qa.testcases.SearchTest@55141def]" started-at="2023-11-02T12:47:53 IST" name="teardown" finished-at="2023-11-02T12:47:54 IST" duration-ms="303" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- teardown -->
+      </class> <!-- com.tutorials.qa.testcases.SearchTest -->
+      <class name="com.tutorials.qa.testcases.RegisterTest">
+        <test-method is-config="true" signature="setup()[pri:0, instance:com.tutorials.qa.testcases.RegisterTest@1a482e36]" started-at="2023-11-02T12:46:43 IST" name="setup" finished-at="2023-11-02T12:46:50 IST" duration-ms="6565" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- setup -->
+        <test-method signature="verifyprovingallfeilds()[pri:0, instance:com.tutorials.qa.testcases.RegisterTest@1a482e36]" started-at="2023-11-02T12:46:50 IST" name="verifyprovingallfeilds" finished-at="2023-11-02T12:46:51 IST" duration-ms="1797" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- verifyprovingallfeilds -->
+        <test-method is-config="true" signature="teardown()[pri:0, instance:com.tutorials.qa.testcases.RegisterTest@1a482e36]" started-at="2023-11-02T12:46:51 IST" name="teardown" finished-at="2023-11-02T12:46:52 IST" duration-ms="284" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- teardown -->
+        <test-method is-config="true" signature="setup()[pri:0, instance:com.tutorials.qa.testcases.RegisterTest@1a482e36]" started-at="2023-11-02T12:46:52 IST" name="setup" finished-at="2023-11-02T12:46:58 IST" duration-ms="6502" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- setup -->
+        <test-method signature="verifyregisterwithexistingemail()[pri:0, instance:com.tutorials.qa.testcases.RegisterTest@1a482e36]" started-at="2023-11-02T12:46:58 IST" name="verifyregisterwithexistingemail" finished-at="2023-11-02T12:47:00 IST" duration-ms="1525" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- verifyregisterwithexistingemail -->
+        <test-method is-config="true" signature="teardown()[pri:0, instance:com.tutorials.qa.testcases.RegisterTest@1a482e36]" started-at="2023-11-02T12:47:00 IST" name="teardown" finished-at="2023-11-02T12:47:00 IST" duration-ms="363" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- teardown -->
+        <test-method is-config="true" signature="setup()[pri:0, instance:com.tutorials.qa.testcases.RegisterTest@1a482e36]" started-at="2023-11-02T12:47:00 IST" name="setup" finished-at="2023-11-02T12:47:06 IST" duration-ms="5531" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- setup -->
+        <test-method signature="verifywithonlymantodoryfileds()[pri:0, instance:com.tutorials.qa.testcases.RegisterTest@1a482e36]" started-at="2023-11-02T12:47:06 IST" name="verifywithonlymantodoryfileds" finished-at="2023-11-02T12:47:08 IST" duration-ms="1622" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- verifywithonlymantodoryfileds -->
+        <test-method is-config="true" signature="teardown()[pri:0, instance:com.tutorials.qa.testcases.RegisterTest@1a482e36]" started-at="2023-11-02T12:47:08 IST" name="teardown" finished-at="2023-11-02T12:47:08 IST" duration-ms="272" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- teardown -->
+      </class> <!-- com.tutorials.qa.testcases.RegisterTest -->
+      <class name="com.tutorials.qa.testcases.LoginTest">
+        <test-method is-config="true" signature="setup()[pri:0, instance:com.tutorials.qa.testcases.LoginTest@47eaca72]" started-at="2023-11-02T12:47:08 IST" name="setup" finished-at="2023-11-02T12:47:15 IST" duration-ms="6889" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- setup -->
+        <test-method signature="verifywithoutdata()[pri:0, instance:com.tutorials.qa.testcases.LoginTest@47eaca72]" started-at="2023-11-02T12:47:15 IST" name="verifywithoutdata" finished-at="2023-11-02T12:47:15 IST" duration-ms="576" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- verifywithoutdata -->
+        <test-method is-config="true" signature="teardown()[pri:0, instance:com.tutorials.qa.testcases.LoginTest@47eaca72]" started-at="2023-11-02T12:47:16 IST" name="teardown" finished-at="2023-11-02T12:47:16 IST" duration-ms="295" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- teardown -->
+        <test-method is-config="true" signature="setup()[pri:0, instance:com.tutorials.qa.testcases.LoginTest@47eaca72]" started-at="2023-11-02T12:47:16 IST" name="setup" finished-at="2023-11-02T12:47:21 IST" duration-ms="5411" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- setup -->
+        <test-method signature="verfiyloginwithvaliddata(java.lang.String,java.lang.String)[pri:1, instance:com.tutorials.qa.testcases.LoginTest@47eaca72]" started-at="2023-11-02T12:47:21 IST" name="verfiyloginwithvaliddata" data-provider="validtestdata" finished-at="2023-11-02T12:47:23 IST" duration-ms="1543" status="PASS">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA[anilkumar5w.marolix@gmail.com]]>
+              </value>
+            </param>
+            <param index="1">
+              <value>
+                <![CDATA[Anilkumar]]>
+              </value>
+            </param>
+          </params>
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- verfiyloginwithvaliddata -->
+        <test-method is-config="true" signature="teardown()[pri:0, instance:com.tutorials.qa.testcases.LoginTest@47eaca72]" started-at="2023-11-02T12:47:23 IST" name="teardown" finished-at="2023-11-02T12:47:23 IST" duration-ms="376" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- teardown -->
+        <test-method is-config="true" signature="setup()[pri:0, instance:com.tutorials.qa.testcases.LoginTest@47eaca72]" started-at="2023-11-02T12:47:23 IST" name="setup" finished-at="2023-11-02T12:47:28 IST" duration-ms="4997" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- setup -->
+        <test-method signature="verifyloginwithinvaliddata()[pri:2, instance:com.tutorials.qa.testcases.LoginTest@47eaca72]" started-at="2023-11-02T12:47:28 IST" name="verifyloginwithinvaliddata" finished-at="2023-11-02T12:47:29 IST" duration-ms="841" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- verifyloginwithinvaliddata -->
+        <test-method is-config="true" signature="teardown()[pri:0, instance:com.tutorials.qa.testcases.LoginTest@47eaca72]" started-at="2023-11-02T12:47:29 IST" name="teardown" finished-at="2023-11-02T12:47:30 IST" duration-ms="241" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- teardown -->
+        <test-method is-config="true" signature="setup()[pri:0, instance:com.tutorials.qa.testcases.LoginTest@47eaca72]" started-at="2023-11-02T12:47:30 IST" name="setup" finished-at="2023-11-02T12:47:35 IST" duration-ms="5148" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- setup -->
+        <test-method signature="Verifywithvalidemailandinvalidpassword()[pri:3, instance:com.tutorials.qa.testcases.LoginTest@47eaca72]" started-at="2023-11-02T12:47:35 IST" name="Verifywithvalidemailandinvalidpassword" finished-at="2023-11-02T12:47:36 IST" duration-ms="861" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- Verifywithvalidemailandinvalidpassword -->
+        <test-method is-config="true" signature="teardown()[pri:0, instance:com.tutorials.qa.testcases.LoginTest@47eaca72]" started-at="2023-11-02T12:47:36 IST" name="teardown" finished-at="2023-11-02T12:47:36 IST" duration-ms="235" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- teardown -->
+      </class> <!-- com.tutorials.qa.testcases.LoginTest -->
+    </test> <!-- testing basicfunctional -->
+  </suite> <!-- ninjatutorials -->
+</testng-results>
