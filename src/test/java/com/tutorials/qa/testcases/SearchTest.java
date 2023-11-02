@@ -33,7 +33,7 @@ public class SearchTest extends Base {
 		
 		
 	}
-	@Test
+	@Test(priority=1)
 	public void verifywithvalidproduct() {
 		
 		 homepage.searchbox("HP");
@@ -42,7 +42,7 @@ public class SearchTest extends Base {
 		Assert.assertTrue(searchpage.DISPLAYSTATUSOFHP());
 		
 	}
-	@Test
+	@Test(priority=2)
 public void verifywithinvalidproduct() {
 	
 		homepage.searchbox("honda");
@@ -53,7 +53,7 @@ public void verifywithinvalidproduct() {
 		Assert.assertEquals(actual, "There is no product that matches the search criteria.");
 		
 	}
-	@Test
+	@Test(priority=3)
 public void verifywithoutnameproduct() {
 	
 		

@@ -61,6 +61,7 @@ String path =screenshot.screenshottaken(driver, testname);
 	@Override
 	public void onTestFailure(ITestResult result) {
 		 testname = result.getName();
+		 
 
 	}
 
