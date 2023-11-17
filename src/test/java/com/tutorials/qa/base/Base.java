@@ -18,7 +18,7 @@ public class Base {
 		FileInputStream file = new FileInputStream(".//src//main//java//com//tutorials//qa//config//Config.properties");
 		
 		pro.load(file);
-urllink=	 pro.getProperty("url");
+urllink= pro.getProperty("url");
 		
 		
 		
@@ -32,4 +32,4 @@ urllink=	 pro.getProperty("url");
 	}
 
 }
-//path correct way : 	String pathofoutput="test-output//ExtentReport//extentreport.html";
+//path correct way : String pathofoutput="test-output//ExtentReport//extentreport.html";
