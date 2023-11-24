@@ -41,8 +41,9 @@ public class TableListFromWebToExcel {
         int rowCount = 0;
 
         for (WebElement row : rows) {
+        	 Row excelRow = sheet.createRow(rowCount++);
             List<WebElement> cells = row.findElements(By.tagName("td"));
-            Row excelRow = sheet.createRow(rowCount++);
+           
 
             int cellCount = 0;
             for (WebElement cell : cells) {
