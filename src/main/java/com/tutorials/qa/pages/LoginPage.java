@@ -25,6 +25,7 @@ public LoginPage(WebDriver driver) {
 }
 public void enteremail(String email) {
 	emailenterbox.sendKeys(email);
+	
 
 }
 public void enterpassword(String password) {
