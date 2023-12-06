@@ -15,7 +15,7 @@ public class SelectWindowWithoutrobotExample {
         WebElement linkToOpen = driver.findElement(By.linkText("Gmail"));
 
         // Open context menu using SHIFT + F10 (equivalent to right-click)
-        linkToOpen.sendKeys(Keys.SHIFT, Keys.F10);
+       linkToOpen.sendKeys(Keys.SHIFT, Keys.F10);
 
         // Perform some action, e.g., pressing arrow down and then Enter
         selectOption(linkToOpen, 3);

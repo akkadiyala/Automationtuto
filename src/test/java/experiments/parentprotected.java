@@ -1,7 +1,7 @@
 package experiments;
 
 public class parentprotected {
-private void name() {
+	protected void name() {
 	System.out.println("anil");
 }
 }
