@@ -6,8 +6,8 @@
       <class name="com.tutorials.qa.testcases.HRMStest">
         <methods>
           <include name="setup"/>
-          <include name="homapagelogin" invocation-numbers="0"/>
           <include name="teardown"/>
+          <include name="logout"/>
         </methods>
       </class> <!-- com.tutorials.qa.testcases.HRMStest -->
     </classes>

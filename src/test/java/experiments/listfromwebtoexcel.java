@@ -34,6 +34,7 @@ public void setup() throws InterruptedException {
 		
 
       driver.manage().window().maximize();
+      
 }
 @Test
 public void getetext() throws IOException {

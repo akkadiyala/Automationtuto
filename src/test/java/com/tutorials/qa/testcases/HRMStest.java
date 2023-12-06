@@ -5,7 +5,9 @@ import java.io.IOException;
 import org.openqa.selenium.WebDriver;
 import org.openqa.selenium.support.ui.ExpectedConditions;
 import org.openqa.selenium.support.ui.WebDriverWait;
+import org.testng.annotations.AfterClass;
 import org.testng.annotations.AfterMethod;
+import org.testng.annotations.BeforeClass;
 import org.testng.annotations.BeforeMethod;
 import org.testng.annotations.DataProvider;
 import org.testng.annotations.Test;
@@ -20,30 +22,31 @@ import com.tutorials.qa.utilies.hrmsutilities;
 public class HRMStest extends Hrmsbase{
 	public WebDriver driver;
 	HRMS hrms;
-	@BeforeMethod
+	@BeforeClass
 	
 	public void setup() throws IOException {
 		
 		
 	    driver=	initlizedbroswer();
 }
-	@Test(enabled=true , dataProvider ="fromexcelsheet" , invocationCount = 3)
+	@Test(dataProvider="localinputs")//invocationCount
 	public void homapagelogin(String email , String password){
 		hrms = new HRMS(driver);
 		hrms.enteremail(email);
 		
 		hrms.enterpassword(password);
 		hrms.submit();
-		
+		//hrms.clockout();
 	//	hrms.clockin();
 		
 	}
-	@Test(enabled=false)
+	@Test(enabled=true)
 	public void login() {
 		hrms.clockin();
 	}
 	@Test(enabled=false)
-	public void logout() {
+	public void logout() throws InterruptedException {
+		Thread.sleep(3000);
 		hrms.clockout();
 	}
 	@DataProvider(name="localinputs")
@@ -56,7 +59,7 @@ public class HRMStest extends Hrmsbase{
 	Object[][] data=	hrmsutilities.datafromexcelsheet();
 		return data;
 	}
-	@AfterMethod
+	@AfterClass
 	public void teardown() {
 		driver.quit();
 		
