@@ -59,7 +59,12 @@
 
 
 
-  	
+
+  	<dependency>
+  		<groupId>com.praveen</groupId>
+  		<artifactId>ActiTIME</artifactId>
+  		<version>0.0.1-SNAPSHOT</version>
+  	</dependency>
   </dependencies>
 
   <build>
