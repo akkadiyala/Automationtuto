@@ -40,11 +40,15 @@ public class ListMethodsExample {
 
         // Iteration using forEach
         System.out.println("Iterating using forEach:");
-        list.forEach(System.out::println);
+    
         for (String element : list) {
             System.out.println(element);
 
 }
+        System.out.println("object For Loop:");
+        for(Object obj : list) {
+            System.out.println(obj);
+    }
     }    
 }
 

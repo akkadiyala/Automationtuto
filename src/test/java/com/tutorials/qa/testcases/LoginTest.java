@@ -38,6 +38,7 @@ public LoginTest() throws IOException {
 		
 		
 	    driver=	initlizedbroswer();
+	
 	    HomePage  homepage = new HomePage(driver);
 	    homepage.clickonmyaccount();
 	    
@@ -54,7 +55,7 @@ public LoginTest() throws IOException {
 	
 		Assert.assertTrue(accountpage.accounteditinfromessage(),"Edit your account information");
 		
-		
+	
 	}
 	@DataProvider(name="validtestdata")
 	public Object[][] supplytestdata() throws IOException {

@@ -1,6 +1,9 @@
 package interfacefull;
 
 public class lenovo implements laptop{
+	
+	//	- The type laptop cannot be the superclass of lenovo; a superclass must be a class
+	//- Breakpoint:lenovo
 
 	@Override
 	public void copy() {

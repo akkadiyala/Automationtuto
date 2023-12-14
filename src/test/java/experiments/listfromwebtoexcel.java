@@ -56,6 +56,7 @@ public void getetext() throws IOException {
       for (int i = 0; i < optionElements.size(); i++) {
           XSSFCell excelCell = sheet.createRow(i).createCell(0);
           excelCell.setCellValue(optionElements.get(i).getText());
+          workbook.close();
       }
 
       // Save the Excel workbook to a file

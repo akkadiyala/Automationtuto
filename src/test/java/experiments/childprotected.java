@@ -4,7 +4,7 @@ package experiments;
 
 public class childprotected extends parentprotected {
 	@Override
-	protected void name() {   // Multiple markers at this line
+	public void name() {   // Multiple markers at this line
 		// Cannot reduce the visibility of the inherited method from parentprotected
 			// overrides experiments.parentprotected.name
 		System.out.println("son");
