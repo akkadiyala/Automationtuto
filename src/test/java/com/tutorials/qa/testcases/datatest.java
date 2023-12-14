@@ -22,7 +22,7 @@ import org.testng.annotations.Test;
 import com.tutorials.qa.pages.AccountPage;
 import com.tutorials.qa.utilies.Utlities;
 
-import experiments.datafromExcel;
+
 
 public class datatest {
 	
