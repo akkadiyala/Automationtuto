@@ -13,7 +13,8 @@ public class MainMethod {
         Object myObject = new Object();
         
         method(myObject);
-        method(null);
+        method(null); // The method method(String) is ambiguous for the type MainMethod if Interger a passed instaed of int a
+        method(3);
         // Calling the overloaded main methods
         main("hello");
         main(6);
@@ -38,19 +39,20 @@ public class MainMethod {
     public static void main(String args) {
         System.out.println("main string ");
     }
+    
 
     public static void main(int a) {
         System.out.println("main integer");
     }
 
-    public static void method(String a) {
+    public static void method(String a) {  // incase we provide Inteeger in palce odf string by running null passing in main method get ambigious issue;
         System.out.println("method string");
     }
 
     public static void method(Object b) {
         System.out.println("method object");
     }
-    public static void anothermethod() {
-    	System.out.println("another method");
+    public static void method(int a) {
+    	System.out.println(" method integer");
     }
 }

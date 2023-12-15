@@ -8,6 +8,7 @@ public class sample {
 	}
 	public void method1() {
 		String name = "kadiyala";
+		System.out.println(name);
 		
 		
 	}
