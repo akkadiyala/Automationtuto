@@ -22,6 +22,14 @@ By googlesearchL=By.name("q");
 WebElement googleE=driver.findElement(googlesearchL);
 googleE.sendKeys("anilkumar kadiyala chowdary");
 googleE.click();
+
+
+
+
+
+
+
+
 Dimension dim = new Dimension(250, 400);
 
 driver.manage().window().setSize(dim);

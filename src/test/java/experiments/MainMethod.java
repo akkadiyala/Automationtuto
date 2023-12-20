@@ -45,7 +45,7 @@ public class MainMethod {
         System.out.println("main integer");
     }
 
-    public static void method(String a) {  // incase we provide Inteeger in palce odf string by running null passing in main method get ambigious issue;
+    public static void method(String a) {  // incase we provide Integer in palce odf string by running null passing in main method get ambigious issue;
         System.out.println("method string");
     }
 
